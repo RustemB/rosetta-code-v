@@ -6,17 +6,19 @@
 fn main() { 
 
     // 1
-    mut phone_book := map[string]int{}    
+    mut phone_book := map[string]int    // int no longer requires {}    
     phone_book['John Doe'] = 11111
 
     println(phone_book['John Doe']) // prints 11111
 
     // 2
     another_phone_book := {
-        'Foo Bar': 22222
+        'Foo Bar': 22222,       // , is optional
+        'Foo Bar2': 33333,
+        'Foo Bar3': 44444
     }
 
-    println(another_phone_book['Foo Bar']) // prints 22222
+    println(another_phone_book['Foo Bar2']) // prints 33333
 }
 
 // See also associative_array_iteration
